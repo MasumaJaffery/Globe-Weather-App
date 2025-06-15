@@ -15,12 +15,13 @@
 <body>
        <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form id="search-form" class="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -37,7 +38,7 @@
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature" id="temperature">12</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
         </div>
@@ -49,6 +50,8 @@
           <a href="https://github.com/MasumaJaffery/Globe-Weather-App" target="_blank"> on GitHub</a> and
           <a href="https://globeweather14.netlify.app/" target="_blank">hosted on Netlify</a>
     </footer>
-     <script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./index.js"></script>
+
 </body>
 </html>
