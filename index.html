@@ -10,9 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
      <title>🌎 Weather App</title>
   </head>
   <body>
+    <div id="sky-container"></div>
     <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
@@ -26,7 +28,7 @@
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
-      <main>
+         <main>
         <div class="weather-app-data">
           <div>
             <h1 class="weather-app-city" id="city"></h1>
@@ -41,11 +43,12 @@
           <div class="weather-app-temperature-container">
             <div id="icon"></div>
             <div class="weather-app-temperature" id="temperature"></div>
-            <div class="weatehr-app-unit">°C</div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
-
+      
        <footer>
         Coded by 
           <a href="https://github.com/MasumaJaffery" target="_blank">Masuma Jaffery</a> and is
