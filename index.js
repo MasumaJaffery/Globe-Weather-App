@@ -99,7 +99,7 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Karbala");
+searchCity("Najaf");
 
  const stars = document.getElementById('stars');
   for (let i = 0; i < 100; i++) {
